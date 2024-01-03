@@ -16,40 +16,40 @@ enum planck_keycodes { QWERTY = SAFE_RANGE };
 
 enum unicode_names {
     AE, AG, HG, CU, FE, SN, PB, UNS, NPN, PLT,
-    ARI, TAU, GEM, CAN, LEO, VIR, LIB, SCO, SAG, AQU, PIS,
-    CJT, STL,SQR, TRN, OPP, NND, SND
-}
+    ARIES, TAURUS, GEMINI, CANCER, LEO, VIRGO, LIBRA, SCORPIO, SAGITTARIUS, CAPRICORN, AQUARIUS, PISCES,
+    CJT, STL, SQR, TRN, OPP, NND, SND
+};
 
 const uint32_t PROGMEM unicode_map[] = {
-	[AE] = 0x2609, // ☉
-	[AG] = 0x263D, // ☽
-	[HG] = 0x263F, // ☿
-	[CU] = 0x2640, // ♀
-	[FE] = 0x2642, // ♂
-	[SN] = 0x2643, // ♃
-	[PB] = 0x2644, // ♄
-    [UNS] = 0x2645, // ♅
-    [NPN] = 0x2646, // ♆
-    [PLT] = 0x2647, // ♇
-	[ARI] = 0x2648, // ♈︎
-	[TAU] = 0x2649, // ♉︎
-	[GEM] = 0x264A, // ♊︎
-	[CAN] = 0x264B, // ♋︎
-	[LEO] = 0x264C, // ♌︎
-	[VIR] = 0x264D, // ♍︎
-	[LIB] = 0x264E, // ♎︎
-	[SCO] = 0x264F, // ♏︎
-	[SAG] = 0x2650, // ♐︎
-	[CAP] = 0x2651, // ♑︎
-	[AQU] = 0x2652, // ♒︎
-	[PIS] = 0x2653, // ♓︎
-	[CJT] = 0x260C, // ☌
-	[STL] = 0x26B9, // ⚹
-	[SQR] = 0x25A1, // □
-	[TRN] = 0x25B3, // △
-	[OPP] = 0x260D, // ☍
-	[NND] = 0x260A, // ☊
-	[SND] = 0x260B	// ☋
+    [AE] = 0x2609,          // ☉
+    [AG] = 0x263D,          // ☽
+    [HG] = 0x263F,          // ☿
+    [CU] = 0x2640,          // ♀
+    [FE] = 0x2642,          // ♂
+    [SN] = 0x2643,          // ♃
+    [PB] = 0x2644,          // ♄
+    [UNS] = 0x2645,         // ♅
+    [NPN] = 0x2646,         // ♆
+    [PLT] = 0x2647,         // ♇
+    [ARIES] = 0x2648,       // ♈︎
+    [TAURUS] = 0x2649,      // ♉︎
+    [GEMINI] = 0x264A,      // ♊︎
+    [CANCER] = 0x264B,      // ♋︎
+    [LEO] = 0x264C,         // ♌︎
+    [VIRGO] = 0x264D,       // ♍︎
+    [LIBRA] = 0x264E,       // ♎︎
+    [SCORPIO] = 0x264F,     // ♏︎
+    [SAGITTARIUS] = 0x2650, // ♐︎
+    [CAPRICORN] = 0x2651,   // ♑︎
+    [AQUARIUS] = 0x2652,    // ♒︎
+    [PISCES] = 0x2653,      // ♓︎
+    [CJT] = 0x260C,         // ☌
+    [STL] = 0x26B9,         // ⚹
+    [SQR] = 0x25A1,         // □
+    [TRN] = 0x25B3,         // △
+    [OPP] = 0x260D,         // ☍
+    [NND] = 0x260A,         // ☊
+    [SND] = 0x260B          // ☋
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -96,9 +96,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         CELLO,  _______,_______,_______,MI_OCTD,MI_OC1, MI_OC3, MI_OCTU,MI_TRN2,MI_TRN1,MI_TR1, MI_TR2    
     ),
     [_UNICODE] = LAYOUT_planck_grid(
-        _______,_______,UP(AQU, CAP),   UP(PIS, SAG),   UM(LEO),_______,_______,        _______,UP(LIB, TAU),   UP(SCO, ARI),   _______,_______,    
-        _______,_______,UM(PB),         UM(SN),         UM(AE), UM(HG), UP(VIR, GEM),   UM(AG), UM(CU),         UM(FE),         UM(PLT),UP(NND, SND),
-        _______,_______,UM(UNS),        UM(NPN),        _______,_______,_______,        UM(CAN),UP(TRN, STL),   UP(OPP, SQR),   UM(CJT),_______,
+        _______,_______,UP(AQUARIUS, CAPRICORN),   UP(PISCES, SAGITTARIUS),   UM(LEO),_______,_______,        _______,UP(LIBRA, TAURUS),   UP(SCORPIO, ARIES),   _______,_______,    
+        _______,_______,UM(PB),         UM(SN),         UM(AE), UM(HG), UP(VIRGO, GEMINI),   UM(AG), UM(CU),         UM(FE),         UM(PLT),UP(NND, SND),
+        _______,_______,UM(UNS),        UM(NPN),        _______,_______,_______,        UM(CANCER),UP(TRN, STL),   UP(OPP, SQR),   UM(CJT),_______,
         _______,_______,_______,        _______,        _______,_______,_______,        _______,_______,        _______,        _______,_______       
     )
 };
