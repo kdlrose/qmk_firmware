@@ -75,12 +75,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_UNICODE] = LAYOUT_planck_grid(
         /* row 1*/
         _______,
-        UM(FIRE),
+        _______,
         UP(CAPRICORN, AQUARIUS),
         UP(SAGITTARIUS, PISCES),
         UM(LEO),
-        _______,
-        _______,
+        UM(FIRE),
+        UM(AIR),
         UM(CANCER),
         UP(TAURUS, LIBRA), 
         UP(ARIES, SCORPIO),
@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,
         /*home row*/    
         _______,
-        UM(EARTH),
+        _______,
         UM(PB),
         UM(SN),
         UM(AE),
@@ -101,19 +101,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,
         /*row 3*/
         _______,
-        UM(AIR),
+        _______,
         UM(UNS),
         UM(NPN),
         _______,
-        _______,
-        _______,
+        UM(EARTH),
+        UM(WATER),
         UP(SND, NND),
         UP(STL, TRN),
         UP(SQR, OPP),
         UM(CJT),
         _______,
         /*row 4*/
-        _______,UM(WATER),_______,_______,_______,_______,_______,_______,_______,_______,_______,_______       
+        _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______       
     ),
     [_VIM] = LAYOUT_planck_grid(
         _______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,_______,
